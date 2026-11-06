@@ -1,0 +1,979 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "company": "Google",
+    "companyIcon": "fa-google",
+    "brand": "google",
+    "location": "Cairo, Egypt",
+    "type": "Full Time",
+    "category": "Software Development",
+    "salaryMin": 18000,
+    "salaryMax": 25000,
+    "experience": "Junior",
+    "skills": [
+      "React",
+      "JavaScript",
+      "CSS"
+    ],
+    "postedDate": "2026-07-13",
+    "isFeatured": true,
+    "tag": "",
+    "description": "Join our team as a Frontend Developer and build fast, modern user interfaces for our web platform.",
+    "companyAbout": "A global technology company building products that help people learn, connect, and get things done.",
+    "responsibilities": [
+      "Own day-to-day work related to frontend developer tasks within the software development team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in React, JavaScript, CSS to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of React, JavaScript, CSS.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Designer",
+    "company": "Microsoft",
+    "companyIcon": "fa-microsoft",
+    "brand": "microsoft",
+    "location": "Giza, Egypt",
+    "type": "Full Time",
+    "category": "Design",
+    "salaryMin": 20000,
+    "salaryMax": 30000,
+    "experience": "Mid",
+    "skills": [
+      "Figma",
+      "UI Design",
+      "Adobe XD"
+    ],
+    "postedDate": "2026-07-12",
+    "isFeatured": true,
+    "tag": "",
+    "description": "We're looking for a UI/UX Designer to craft intuitive experiences across web and mobile products.",
+    "companyAbout": "A technology company empowering every person and organization on the planet to achieve more.",
+    "responsibilities": [
+      "Own day-to-day work related to ui/ux designer tasks within the design team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Figma, UI Design, Adobe XD to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "2-4 years of relevant hands-on experience.",
+      "Solid working knowledge of Figma, UI Design, Adobe XD.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Product Manager",
+    "company": "Amazon",
+    "companyIcon": "fa-amazon",
+    "brand": "amazon",
+    "location": "Cairo, Egypt",
+    "type": "Full Time",
+    "category": "Business",
+    "salaryMin": 26000,
+    "salaryMax": 35000,
+    "experience": "Senior",
+    "skills": [
+      "Product",
+      "Strategy",
+      "Analytics"
+    ],
+    "postedDate": "2026-07-14",
+    "isFeatured": true,
+    "tag": "",
+    "description": "Lead the product team and define the growth strategy for new digital products.",
+    "companyAbout": "A global e-commerce and cloud computing company obsessed with customer experience.",
+    "responsibilities": [
+      "Own day-to-day work related to product manager tasks within the business team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Product, Strategy, Analytics to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "5+ years of relevant experience, with a track record of leading work end-to-end.",
+      "Solid working knowledge of Product, Strategy, Analytics.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Backend Developer",
+    "company": "Spotify",
+    "companyIcon": "fa-spotify",
+    "brand": "spotify",
+    "location": "Remote",
+    "type": "Full Time",
+    "category": "Software Development",
+    "salaryMin": 22000,
+    "salaryMax": 28000,
+    "experience": "Mid",
+    "skills": [
+      "Node.js",
+      "MongoDB",
+      "APIs"
+    ],
+    "postedDate": "2026-07-15",
+    "isFeatured": true,
+    "tag": "New",
+    "description": "Build and maintain the APIs powering our streaming platform at scale.",
+    "companyAbout": "A digital music and podcast streaming platform used by hundreds of millions of listeners.",
+    "responsibilities": [
+      "Own day-to-day work related to backend developer tasks within the software development team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Node.js, MongoDB, APIs to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "2-4 years of relevant hands-on experience.",
+      "Solid working knowledge of Node.js, MongoDB, APIs.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off",
+      "Fully remote, work from anywhere"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Full Stack Developer",
+    "company": "Notion",
+    "companyIcon": null,
+    "brand": "notion",
+    "location": "Cairo, Egypt",
+    "type": "Full Time",
+    "category": "Software Development",
+    "salaryMin": 18000,
+    "salaryMax": 24000,
+    "experience": "Mid",
+    "skills": [
+      "React",
+      "Node.js",
+      "SQL"
+    ],
+    "postedDate": "2026-07-14",
+    "isFeatured": false,
+    "tag": "Hot",
+    "description": "Work across the stack with a small, fast-moving product team.",
+    "companyAbout": "A connected workspace for notes, docs, projects, and collaboration.",
+    "responsibilities": [
+      "Own day-to-day work related to full stack developer tasks within the software development team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in React, Node.js, SQL to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "2-4 years of relevant hands-on experience.",
+      "Solid working knowledge of React, Node.js, SQL.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Data Analyst",
+    "company": "Airbnb",
+    "companyIcon": "fa-airbnb",
+    "brand": "airbnb",
+    "location": "Alexandria, Egypt",
+    "type": "Full Time",
+    "category": "Business",
+    "salaryMin": 16000,
+    "salaryMax": 20000,
+    "experience": "Junior",
+    "skills": [
+      "SQL",
+      "Excel",
+      "Power BI"
+    ],
+    "postedDate": "2026-07-14",
+    "isFeatured": true,
+    "tag": "New",
+    "description": "Analyze booking data and produce weekly reports to support team decisions.",
+    "companyAbout": "A global travel platform connecting hosts and guests in over 220 countries.",
+    "responsibilities": [
+      "Own day-to-day work related to data analyst tasks within the business team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in SQL, Excel, Power BI to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of SQL, Excel, Power BI.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Marketing Specialist",
+    "company": "HubSpot",
+    "companyIcon": "fa-hubspot",
+    "brand": "hubspot",
+    "location": "Remote",
+    "type": "Full Time",
+    "category": "Marketing",
+    "salaryMin": 15000,
+    "salaryMax": 18000,
+    "experience": "Junior",
+    "skills": [
+      "SEO",
+      "Content",
+      "Ads"
+    ],
+    "postedDate": "2026-07-14",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Manage digital marketing campaigns and improve search visibility for our products.",
+    "companyAbout": "A CRM platform helping businesses grow better with marketing, sales, and service tools.",
+    "responsibilities": [
+      "Own day-to-day work related to marketing specialist tasks within the marketing team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in SEO, Content, Ads to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of SEO, Content, Ads.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off",
+      "Fully remote, work from anywhere"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Customer Support Representative",
+    "company": "Dropbox",
+    "companyIcon": "fa-dropbox",
+    "brand": "dropbox",
+    "location": "Cairo, Egypt",
+    "type": "Part Time",
+    "category": "Business",
+    "salaryMin": 10000,
+    "salaryMax": 13000,
+    "experience": "Junior",
+    "skills": [
+      "Support",
+      "Communication"
+    ],
+    "postedDate": "2026-07-13",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Respond to customer inquiries and resolve basic technical issues via chat and email.",
+    "companyAbout": "A cloud storage and collaboration platform used by teams around the world.",
+    "responsibilities": [
+      "Own day-to-day work related to customer support representative tasks within the business team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Support, Communication to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of Support, Communication.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible schedule",
+      "Room to grow into full-time"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "HR Coordinator",
+    "company": "Meta",
+    "companyIcon": "fa-meta",
+    "brand": "meta",
+    "location": "Cairo, Egypt",
+    "type": "Full Time",
+    "category": "Human Resources",
+    "salaryMin": 14000,
+    "salaryMax": 19000,
+    "experience": "Junior",
+    "skills": [
+      "Recruitment",
+      "Onboarding"
+    ],
+    "postedDate": "2026-07-11",
+    "isFeatured": true,
+    "tag": "",
+    "description": "Coordinate hiring and onboarding processes for new employees.",
+    "companyAbout": "A technology company building products that help people connect and build communities.",
+    "responsibilities": [
+      "Own day-to-day work related to hr coordinator tasks within the human resources team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Recruitment, Onboarding to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of Recruitment, Onboarding.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Financial Analyst",
+    "company": "Netflix",
+    "companyIcon": null,
+    "brand": "netflix",
+    "location": "Cairo, Egypt",
+    "type": "Full Time",
+    "category": "Finance",
+    "salaryMin": 20000,
+    "salaryMax": 27000,
+    "experience": "Mid",
+    "skills": [
+      "Excel",
+      "Forecasting"
+    ],
+    "postedDate": "2026-07-10",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Prepare financial reports and quarterly forecasts to support investment decisions.",
+    "companyAbout": "A leading streaming entertainment service with members in over 190 countries.",
+    "responsibilities": [
+      "Own day-to-day work related to financial analyst tasks within the finance team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Excel, Forecasting to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "2-4 years of relevant hands-on experience.",
+      "Solid working knowledge of Excel, Forecasting.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Marketing Intern",
+    "company": "HubSpot",
+    "companyIcon": "fa-hubspot",
+    "brand": "hubspot",
+    "location": "Remote",
+    "type": "Internship",
+    "category": "Marketing",
+    "salaryMin": 5000,
+    "salaryMax": 7000,
+    "experience": "Junior",
+    "skills": [
+      "Content",
+      "Social Media"
+    ],
+    "postedDate": "2026-07-09",
+    "isFeatured": false,
+    "tag": "New",
+    "description": "Support the marketing team with content scheduling and campaign reporting.",
+    "companyAbout": "A CRM platform helping businesses grow better with marketing, sales, and service tools.",
+    "responsibilities": [
+      "Own day-to-day work related to marketing intern tasks within the marketing team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Content, Social Media to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of Content, Social Media.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Mentorship from senior team members",
+      "Certificate of completion",
+      "Fully remote, work from anywhere"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "UX Researcher",
+    "company": "Airbnb",
+    "companyIcon": "fa-airbnb",
+    "brand": "airbnb",
+    "location": "Cairo, Egypt",
+    "type": "Full Time",
+    "category": "Design",
+    "salaryMin": 19000,
+    "salaryMax": 24000,
+    "experience": "Mid",
+    "skills": [
+      "User Research",
+      "Figma",
+      "Testing"
+    ],
+    "postedDate": "2026-07-08",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Run usability studies and translate findings into actionable design improvements.",
+    "companyAbout": "A global travel platform connecting hosts and guests in over 220 countries.",
+    "responsibilities": [
+      "Own day-to-day work related to ux researcher tasks within the design team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in User Research, Figma, Testing to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "2-4 years of relevant hands-on experience.",
+      "Solid working knowledge of User Research, Figma, Testing.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "DevOps Engineer",
+    "company": "Amazon",
+    "companyIcon": "fa-amazon",
+    "brand": "amazon",
+    "location": "Remote",
+    "type": "Full Time",
+    "category": "Software Development",
+    "salaryMin": 28000,
+    "salaryMax": 36000,
+    "experience": "Senior",
+    "skills": [
+      "AWS",
+      "Docker",
+      "CI/CD"
+    ],
+    "postedDate": "2026-07-07",
+    "isFeatured": false,
+    "tag": "Hot",
+    "description": "Own the deployment pipeline and keep our infrastructure reliable at scale.",
+    "companyAbout": "A global e-commerce and cloud computing company obsessed with customer experience.",
+    "responsibilities": [
+      "Own day-to-day work related to devops engineer tasks within the software development team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in AWS, Docker, CI/CD to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "5+ years of relevant experience, with a track record of leading work end-to-end.",
+      "Solid working knowledge of AWS, Docker, CI/CD.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off",
+      "Fully remote, work from anywhere"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Content Writer",
+    "company": "Meta",
+    "companyIcon": "fa-meta",
+    "brand": "meta",
+    "location": "Alexandria, Egypt",
+    "type": "Part Time",
+    "category": "Marketing",
+    "salaryMin": 9000,
+    "salaryMax": 12000,
+    "experience": "Junior",
+    "skills": [
+      "Writing",
+      "SEO"
+    ],
+    "postedDate": "2026-07-06",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Write blog posts and product copy that support our growth marketing efforts.",
+    "companyAbout": "A technology company building products that help people connect and build communities.",
+    "responsibilities": [
+      "Own day-to-day work related to content writer tasks within the marketing team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Writing, SEO to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of Writing, SEO.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible schedule",
+      "Room to grow into full-time"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Sales Intern",
+    "company": "Dropbox",
+    "companyIcon": "fa-dropbox",
+    "brand": "dropbox",
+    "location": "Cairo, Egypt",
+    "type": "Internship",
+    "category": "Business",
+    "salaryMin": 4000,
+    "salaryMax": 6000,
+    "experience": "Junior",
+    "skills": [
+      "Outreach",
+      "CRM"
+    ],
+    "postedDate": "2026-07-05",
+    "isFeatured": false,
+    "tag": "New",
+    "description": "Shadow the sales team and help qualify inbound leads.",
+    "companyAbout": "A cloud storage and collaboration platform used by teams around the world.",
+    "responsibilities": [
+      "Own day-to-day work related to sales intern tasks within the business team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Outreach, CRM to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of Outreach, CRM.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Mentorship from senior team members",
+      "Certificate of completion"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "iOS Developer",
+    "company": "Spotify",
+    "companyIcon": "fa-spotify",
+    "brand": "spotify",
+    "location": "Giza, Egypt",
+    "type": "Full Time",
+    "category": "Software Development",
+    "salaryMin": 21000,
+    "salaryMax": 27000,
+    "experience": "Mid",
+    "skills": [
+      "Swift",
+      "iOS",
+      "APIs"
+    ],
+    "postedDate": "2026-07-04",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Build features for our iOS app used by millions of listeners daily.",
+    "companyAbout": "A digital music and podcast streaming platform used by hundreds of millions of listeners.",
+    "responsibilities": [
+      "Own day-to-day work related to ios developer tasks within the software development team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Swift, iOS, APIs to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "2-4 years of relevant hands-on experience.",
+      "Solid working knowledge of Swift, iOS, APIs.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Graphic Designer",
+    "company": "Notion",
+    "companyIcon": null,
+    "brand": "notion",
+    "location": "Cairo, Egypt",
+    "type": "Full Time",
+    "category": "Design",
+    "salaryMin": 13000,
+    "salaryMax": 17000,
+    "experience": "Junior",
+    "skills": [
+      "Illustrator",
+      "Branding"
+    ],
+    "postedDate": "2026-07-03",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Design marketing visuals and templates used across our product and website.",
+    "companyAbout": "A connected workspace for notes, docs, projects, and collaboration.",
+    "responsibilities": [
+      "Own day-to-day work related to graphic designer tasks within the design team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Illustrator, Branding to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of Illustrator, Branding.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Business Analyst",
+    "company": "Google",
+    "companyIcon": "fa-google",
+    "brand": "google",
+    "location": "Cairo, Egypt",
+    "type": "Full Time",
+    "category": "Business",
+    "salaryMin": 19000,
+    "salaryMax": 25000,
+    "experience": "Mid",
+    "skills": [
+      "SQL",
+      "Analytics",
+      "Reporting"
+    ],
+    "postedDate": "2026-07-02",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Analyze product metrics and present recommendations to stakeholders.",
+    "companyAbout": "A global technology company building products that help people learn, connect, and get things done.",
+    "responsibilities": [
+      "Own day-to-day work related to business analyst tasks within the business team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in SQL, Analytics, Reporting to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "2-4 years of relevant hands-on experience.",
+      "Solid working knowledge of SQL, Analytics, Reporting.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Technical Recruiter",
+    "company": "Microsoft",
+    "companyIcon": "fa-microsoft",
+    "brand": "microsoft",
+    "location": "Remote",
+    "type": "Full Time",
+    "category": "Human Resources",
+    "salaryMin": 16000,
+    "salaryMax": 21000,
+    "experience": "Mid",
+    "skills": [
+      "Sourcing",
+      "Interviewing"
+    ],
+    "postedDate": "2026-07-01",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Source and screen engineering candidates for our regional team.",
+    "companyAbout": "A technology company empowering every person and organization on the planet to achieve more.",
+    "responsibilities": [
+      "Own day-to-day work related to technical recruiter tasks within the human resources team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Sourcing, Interviewing to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "2-4 years of relevant hands-on experience.",
+      "Solid working knowledge of Sourcing, Interviewing.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off",
+      "Fully remote, work from anywhere"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Junior Accountant",
+    "company": "Netflix",
+    "companyIcon": null,
+    "brand": "netflix",
+    "location": "Cairo, Egypt",
+    "type": "Full Time",
+    "category": "Finance",
+    "salaryMin": 12000,
+    "salaryMax": 16000,
+    "experience": "Junior",
+    "skills": [
+      "Bookkeeping",
+      "Excel"
+    ],
+    "postedDate": "2026-06-30",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Support the finance team with day-to-day bookkeeping and reconciliations.",
+    "companyAbout": "A leading streaming entertainment service with members in over 190 countries.",
+    "responsibilities": [
+      "Own day-to-day work related to junior accountant tasks within the finance team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Bookkeeping, Excel to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of Bookkeeping, Excel.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "QA Engineer",
+    "company": "Amazon",
+    "companyIcon": "fa-amazon",
+    "brand": "amazon",
+    "location": "Alexandria, Egypt",
+    "type": "Full Time",
+    "category": "Software Development",
+    "salaryMin": 15000,
+    "salaryMax": 20000,
+    "experience": "Junior",
+    "skills": [
+      "Testing",
+      "Automation"
+    ],
+    "postedDate": "2026-06-29",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Write and maintain automated tests to keep releases stable.",
+    "companyAbout": "A global e-commerce and cloud computing company obsessed with customer experience.",
+    "responsibilities": [
+      "Own day-to-day work related to qa engineer tasks within the software development team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Testing, Automation to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of Testing, Automation.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Social Media Intern",
+    "company": "Meta",
+    "companyIcon": "fa-meta",
+    "brand": "meta",
+    "location": "Remote",
+    "type": "Internship",
+    "category": "Marketing",
+    "salaryMin": 4500,
+    "salaryMax": 6500,
+    "experience": "Junior",
+    "skills": [
+      "Social Media",
+      "Analytics"
+    ],
+    "postedDate": "2026-06-28",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Help plan and schedule social content across our regional accounts.",
+    "companyAbout": "A technology company building products that help people connect and build communities.",
+    "responsibilities": [
+      "Own day-to-day work related to social media intern tasks within the marketing team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Social Media, Analytics to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of Social Media, Analytics.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Mentorship from senior team members",
+      "Certificate of completion",
+      "Fully remote, work from anywhere"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Senior Product Designer",
+    "company": "Airbnb",
+    "companyIcon": "fa-airbnb",
+    "brand": "airbnb",
+    "location": "Giza, Egypt",
+    "type": "Full Time",
+    "category": "Design",
+    "salaryMin": 27000,
+    "salaryMax": 34000,
+    "experience": "Senior",
+    "skills": [
+      "Design Systems",
+      "Figma"
+    ],
+    "postedDate": "2026-06-27",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Lead design for a core product area and mentor junior designers.",
+    "companyAbout": "A global travel platform connecting hosts and guests in over 220 countries.",
+    "responsibilities": [
+      "Own day-to-day work related to senior product designer tasks within the design team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Design Systems, Figma to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "5+ years of relevant experience, with a track record of leading work end-to-end.",
+      "Solid working knowledge of Design Systems, Figma.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible working hours",
+      "Paid time off"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Office Administrator",
+    "company": "Dropbox",
+    "companyIcon": "fa-dropbox",
+    "brand": "dropbox",
+    "location": "Cairo, Egypt",
+    "type": "Part Time",
+    "category": "Business",
+    "salaryMin": 8000,
+    "salaryMax": 11000,
+    "experience": "Junior",
+    "skills": [
+      "Organization",
+      "Scheduling"
+    ],
+    "postedDate": "2026-06-26",
+    "isFeatured": false,
+    "tag": "",
+    "description": "Keep the office running smoothly and support the team with day-to-day admin tasks.",
+    "companyAbout": "A cloud storage and collaboration platform used by teams around the world.",
+    "responsibilities": [
+      "Own day-to-day work related to office administrator tasks within the business team.",
+      "Collaborate closely with cross-functional teammates to plan and ship work on schedule.",
+      "Apply hands-on skills in Organization, Scheduling to solve real problems for the team.",
+      "Take part in regular reviews and share updates on progress and blockers."
+    ],
+    "requirements": [
+      "0-2 years of relevant experience, or a strong portfolio/projects.",
+      "Solid working knowledge of Organization, Scheduling.",
+      "Comfortable communicating in English, both written and verbal.",
+      "Strong problem-solving skills and attention to detail."
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Learning & development budget",
+      "Flexible schedule",
+      "Room to grow into full-time"
+    ]
+  }
+]

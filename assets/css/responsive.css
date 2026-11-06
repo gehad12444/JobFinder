@@ -1,0 +1,138 @@
+/* ============ Tablet ============ */
+@media (max-width: 1024px){
+  .category-grid{ grid-template-columns:repeat(3,1fr); }
+  .featured-page{ grid-template-columns:repeat(2,1fr); }
+  .testimonials-grid{
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "heading"
+      "cards"
+      "cta";
+  }
+  .cta-card{ grid-row:auto; }
+  .footer-grid{ grid-template-columns:1fr 1fr 1fr; }
+
+  .saved-jobs-grid{ grid-template-columns:repeat(2,1fr); }
+
+  .contact-grid{ grid-template-columns:1fr; }
+
+  /* Jobs page: sidebar becomes a slide-in drawer */
+  .jobs-layout{ grid-template-columns:1fr; }
+  .mobile-filter-btn{ display:inline-flex; }
+  .filters-panel{
+    position:fixed;
+    top:0; left:0;
+    width:300px;
+    max-width:85vw;
+    height:100vh;
+    border-radius:0;
+    overflow-y:auto;
+    transform:translateX(-100%);
+    transition:transform var(--transition);
+    z-index:200;
+  }
+  .filters-panel.show{ transform:translateX(0); }
+  .filters-close{ display:flex; }
+
+  /* Job Details: sidebar drops below main content */
+  .job-details-body{ grid-template-columns:1fr; }
+  .job-details-side{ position:static; }
+  .similar-jobs-grid{ grid-template-columns:repeat(2,1fr); }
+}
+
+/* ============ Mobile ============ */
+@media (max-width: 768px){
+  .topbar{ font-size:.7rem; gap:16px; }
+
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    flex-direction:column;
+    gap:0;
+    background:var(--surface);
+    border-bottom:1px solid var(--border);
+    padding:8px 24px 16px;
+  }
+  .nav-links.show{ display:flex; }
+  .nav-links a{ padding:12px 0; border-bottom:1px solid var(--border); }
+  .nav-links a:last-child{ border-bottom:none; }
+
+  .menu-toggle{ display:flex; }
+  .nav-actions .btn span{ display:none; }
+
+  .hero{ grid-template-columns:1fr; padding-top:24px; }
+  .hero-art{ order:-1; }
+  .hero-text h1{ font-size:2rem; }
+  .hero-text h1 br{ display:none; }
+
+  .search-bar{
+    flex-direction:column;
+    border-radius:var(--radius-md);
+  }
+  .search-field{ border-right:none; border-bottom:1px solid var(--border); width:100%; }
+  .search-bar .btn{ width:100%; border-radius:var(--radius-md); }
+
+  .category-grid{ grid-template-columns:repeat(2,1fr); }
+
+  .featured-page{ grid-template-columns:1fr; gap:14px; }
+  .carousel-btn{ width:36px; height:36px; }
+
+  .latest-item{ flex-wrap:wrap; }
+  .latest-item .right{ width:100%; text-align:left; margin-top:8px; }
+  .latest-item:hover{ padding-left:20px; }
+
+  .stats{ grid-template-columns:repeat(2,1fr); }
+
+  .testimonial-cards{ grid-template-columns:1fr; }
+
+  .newsletter{ flex-direction:column; align-items:flex-start; padding:26px 22px; }
+  .newsletter form{ width:100%; }
+  .newsletter input{ flex:1; min-width:0; }
+
+  .footer-grid{ grid-template-columns:1fr 1fr; }
+
+  /* Jobs page */
+  .jobs-hero h1{ font-size:1.6rem; }
+  .job-list-item{ flex-wrap:wrap; }
+  .job-list-side{
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    min-width:0;
+    text-align:left;
+  }
+  .job-list-side .btn{ width:auto; }
+
+  /* Job Details */
+  .job-header-top{ flex-wrap:wrap; }
+  .job-header-bottom{ flex-direction:column; align-items:stretch; }
+  .apply-btn{ margin-left:0; width:100%; }
+  .job-header-bottom .skills{ order:2; }
+  .similar-jobs-grid{ grid-template-columns:1fr; }
+
+  /* Saved Jobs */
+  .saved-jobs-grid{ grid-template-columns:1fr; }
+
+  /* Profile */
+  .profile-header{ flex-wrap:wrap; text-align:center; justify-content:center; }
+  .profile-header .btn{ width:100%; }
+  .profile-stats{ grid-template-columns:1fr 1fr; }
+  .profile-list-item{ flex-wrap:wrap; }
+  .profile-list-item .right{ width:100%; text-align:left; margin-top:6px; }
+
+  /* Contact */
+  .contact-header h1{ font-size:1.6rem; }
+  .contact-form{ padding:22px; }
+  .contact-form .form-row{ grid-template-columns:1fr; }
+}
+
+@media (max-width: 480px){
+  .category-grid{ grid-template-columns:1fr 1fr; }
+  .stats{ grid-template-columns:1fr 1fr; }
+  .footer-grid{ grid-template-columns:1fr; }
+  .newsletter form{ flex-direction:column; }
+}

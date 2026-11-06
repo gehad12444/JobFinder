@@ -1,0 +1,8 @@
+[
+  { "name": "Software Development", "icon": "fa-code", "count": 2540, "color": "blue" },
+  { "name": "Design", "icon": "fa-palette", "count": 1230, "color": "purple" },
+  { "name": "Marketing", "icon": "fa-bullhorn", "count": 1860, "color": "orange" },
+  { "name": "Business", "icon": "fa-briefcase", "count": 2110, "color": "green" },
+  { "name": "Human Resources", "icon": "fa-people-group", "count": 980, "color": "pink" },
+  { "name": "Finance", "icon": "fa-chart-line", "count": 1450, "color": "cyan" }
+]

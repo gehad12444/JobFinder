@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JobFinder | Find. Apply. Grow.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/sections.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <span><i class="fa-solid fa-fire"></i> 18,000+ Jobs Available</span>
+  <span><i class="fa-solid fa-circle-check"></i> Trusted by 500+ Companies</span>
+</div>
+
+<!-- Navbar (sticky) -->
+<div class="navbar-outer">
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-briefcase"></i> JobFinder
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/jobs.html">Jobs</a>
+      <a href="pages/saved.html">Saved Jobs</a>
+      <a href="pages/profile.html">Profile</a>
+      <a href="pages/contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+      <a href="pages/profile.html" class="btn btn-primary">
+        <i class="fa-regular fa-user"></i> Log In / Sign Up
+      </a>
+    </div>
+
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="badge">Find. Apply. Grow.</span>
+    <h1>Your next career <br>adventure <span class="highlight">starts here.</span></h1>
+    <p>Discover thousands of job opportunities from top companies. Find the perfect job for you.</p>
+
+    <form class="search-bar" id="heroSearchForm">
+      <div class="search-field">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchTitle" placeholder="Job title, keywords or company">
+      </div>
+      <div class="search-field">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" id="searchLocation" placeholder="City, state or remote">
+      </div>
+      <button type="submit" class="btn btn-primary" id="searchBtn">
+        <span class="btn-label">Search</span>
+      </button>
+    </form>
+
+    <div class="popular-searches">
+      <span>Popular searches:</span>
+      <a href="pages/jobs.html?search=Frontend%20Developer">Frontend Developer</a>
+      <a href="pages/jobs.html?search=UI%2FUX%20Designer">UI/UX Designer</a>
+      <a href="pages/jobs.html?search=Product%20Manager">Product Manager</a>
+      <a href="pages/jobs.html?search=Data%20Analyst">Data Analyst</a>
+    </div>
+  </div>
+
+  <div class="hero-art">
+    <img src="assets/images/hero-illustration.png" alt="Illustration of a person browsing job listings on a laptop">
+  </div>
+</section>
+
+
+<!-- Categories -->
+<section class="section">
+  <div class="section-head">
+    <h2>Explore by Category</h2>
+    <a href="pages/jobs.html" class="link-arrow">View all categories <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
+  <div class="category-grid" id="categoryGrid"></div>
+</section>
+
+<!-- Featured Jobs -->
+<section class="section">
+  <div class="section-head">
+    <h2>Featured Jobs</h2>
+    <a href="pages/jobs.html?featured=true" class="link-arrow">View all featured jobs <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
+  <div class="featured-carousel">
+    <button class="carousel-btn" id="featPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="featured-viewport">
+      <div class="featured-slider" id="featuredSlider"></div>
+    </div>
+    <button class="carousel-btn" id="featNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+  <div class="dots" id="featDots"></div>
+</section>
+
+<!-- Latest Jobs -->
+<section class="section">
+  <div class="section-head">
+    <h2>Latest Jobs</h2>
+    <a href="pages/jobs.html" class="link-arrow">View all jobs <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
+  <div class="latest-list" id="latestList"></div>
+
+  <div class="center-btn">
+    <a href="pages/jobs.html" class="btn btn-outline">Explore All Jobs</a>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="section stats-section">
+  <div class="stats" id="statsGrid">
+    <div class="stat">
+      <i class="fa-solid fa-briefcase"></i>
+      <h3 data-count="15000" data-suffix="+">0</h3>
+      <p>Job Opportunities</p>
+    </div>
+    <div class="stat">
+      <i class="fa-solid fa-building"></i>
+      <h3 data-count="700" data-suffix="+">0</h3>
+      <p>Companies</p>
+    </div>
+    <div class="stat">
+      <i class="fa-solid fa-users"></i>
+      <h3 data-count="12000" data-suffix="+">0</h3>
+      <p>Happy Candidates</p>
+    </div>
+    <div class="stat">
+      <i class="fa-solid fa-star"></i>
+      <h3 data-count="98" data-suffix="%">0</h3>
+      <p>Success Rate</p>
+    </div>
+  </div>
+</section>
+
+<!-- Top Companies -->
+<section class="section">
+  <div class="section-head">
+    <h2>Top Companies Hiring</h2>
+    <a href="pages/jobs.html" class="link-arrow">View all companies <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
+  <div class="companies-carousel">
+    <button class="carousel-btn" id="compPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="companies-row" id="companiesRow"></div>
+    <button class="carousel-btn" id="compNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- Testimonials + CTA -->
+<section class="section">
+  <div class="testimonials-grid">
+    <h2>What our users say <i class="fa-solid fa-quote-right"></i></h2>
+
+    <div class="testimonial-cards" id="testimonialCards"></div>
+
+    <div class="cta-card">
+      <div class="cta-art" aria-hidden="true">
+        <svg viewBox="0 0 160 200" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="80" cy="70" r="60" fill="var(--primary-soft)"/>
+          <g>
+            <path d="M80 20 C100 40 106 75 96 110 L64 110 C54 75 60 40 80 20Z" fill="var(--surface)" stroke="var(--primary)" stroke-width="3"/>
+            <circle cx="80" cy="62" r="12" fill="var(--primary-soft)" stroke="var(--primary)" stroke-width="3"/>
+            <path d="M64 95 L44 118 L60 112Z" fill="var(--accent)"/>
+            <path d="M96 95 L116 118 L100 112Z" fill="var(--accent)"/>
+            <path d="M70 110 L90 110 L84 140 L76 140Z" fill="var(--primary)"/>
+            <path d="M75 140 Q80 158 85 140" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
+          </g>
+          <circle cx="30" cy="40" r="4" fill="var(--primary-light)"/>
+          <circle cx="132" cy="55" r="3" fill="var(--accent)"/>
+          <circle cx="120" cy="25" r="2.5" fill="var(--primary-light)"/>
+        </svg>
+      </div>
+      <h3>Ready to find your dream job?</h3>
+      <p>Create your free account today and get personalized job recommendations.</p>
+      <a href="pages/profile.html" class="btn btn-primary">Create Account</a>
+      <p class="small">Already have an account? <a href="pages/profile.html">Log In</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="section">
+  <div class="newsletter">
+    <div class="newsletter-copy">
+      <i class="fa-solid fa-envelope"></i>
+      <div>
+        <h3>Stay updated with new job opportunities</h3>
+        <p>Subscribe to our newsletter and never miss a great job again.</p>
+      </div>
+    </div>
+    <form id="newsletterForm">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+      <button type="submit" class="btn btn-primary" id="newsletterBtn">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="logo"><i class="fa-solid fa-briefcase"></i> JobFinder</a>
+      <p>Find the right job. Right now. Thousands of opportunities from top companies.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">About Us</a>
+      <a href="pages/jobs.html">Careers</a>
+      <a href="#">Blog</a>
+      <a href="pages/contact.html">Help Center</a>
+    </div>
+    <div>
+      <h4>For Employers</h4>
+      <a href="#">Post a Job</a>
+      <a href="#">Browse Candidates</a>
+      <a href="#">Pricing</a>
+      <a href="#">Resources</a>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <a href="#">FAQ</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="pages/contact.html">Contact Us</a>
+    </div>
+    <div>
+      <h4>Download Our App</h4>
+      <p>Get the app for a better experience on the go.</p>
+      <div class="app-badges">
+        <a href="#" class="app-badge"><i class="fa-brands fa-apple"></i> App Store</a>
+        <a href="#" class="app-badge"><i class="fa-brands fa-google-play"></i> Google Play</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 JobFinder. All rights reserved.</div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="assets/js/api.js"></script>
+<script src="assets/js/saved-jobs.js"></script>
+<script src="assets/js/brands.js"></script>
+<script src="assets/js/featured-jobs.js"></script>
+<script src="assets/js/latest-jobs.js"></script>
+<script src="assets/js/stats.js"></script>
+<script src="assets/js/companies.js"></script>
+<script src="assets/js/testimonials.js"></script>
+<script src="assets/js/newsletter.js"></script>
+<script src="assets/js/back-to-top.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/categories.js"></script>
+<script src="assets/js/hero-search.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

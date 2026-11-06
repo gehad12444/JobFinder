@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Sarah Ahmed",
+    "role": "Frontend Developer",
+    "rating": 5,
+    "quote": "I landed my dream job in just two weeks. The whole experience felt effortless."
+  },
+  {
+    "name": "Mohamed Ali",
+    "role": "UI/UX Designer",
+    "rating": 5,
+    "quote": "So many great opportunities in one place, and the filters made searching painless."
+  },
+  {
+    "name": "Nada Hassan",
+    "role": "Product Manager",
+    "rating": 5,
+    "quote": "By far the smoothest job search I've had. Thank you, JobFinder!"
+  }
+]

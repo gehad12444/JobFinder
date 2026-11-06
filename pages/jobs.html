@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jobs | JobFinder</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/sections.css">
+<link rel="stylesheet" href="../assets/css/jobs-page.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <span><i class="fa-solid fa-fire"></i> 18,000+ Jobs Available</span>
+  <span><i class="fa-solid fa-circle-check"></i> Trusted by 500+ Companies</span>
+</div>
+
+<!-- Navbar (sticky) -->
+<div class="navbar-outer">
+  <header class="navbar">
+    <a href="../index.html" class="logo">
+      <i class="fa-solid fa-briefcase"></i> JobFinder
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html">Home</a>
+      <a href="jobs.html" class="active">Jobs</a>
+      <a href="saved.html">Saved Jobs</a>
+      <a href="profile.html">Profile</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+      <a href="profile.html" class="btn btn-primary">
+        <i class="fa-regular fa-user"></i> Log In / Sign Up
+      </a>
+    </div>
+
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+</div>
+
+<!-- Jobs hero / search -->
+<section class="jobs-hero">
+  <h1>Find Your Dream Job</h1>
+  <p>Browse thousands of opportunities and filter down to the ones that fit you.</p>
+
+  <form class="search-bar jobs-search-bar" id="jobsSearchForm">
+    <div class="search-field">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="jobsSearchTitle" placeholder="Job title, keywords or company">
+    </div>
+    <div class="search-field">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="text" id="jobsSearchLocation" placeholder="City, state or remote">
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</section>
+
+<!-- Filters + results -->
+<section class="section jobs-layout">
+
+  <div class="filters-overlay" id="filtersOverlay"></div>
+
+  <aside class="filters-panel" id="filtersPanel">
+    <div class="filters-head">
+      <h3>Filters <span class="filter-count" id="filterCount"></span></h3>
+      <div class="filters-head-actions">
+        <button type="button" class="link-arrow" id="clearFilters">Clear all</button>
+        <button type="button" class="icon-btn filters-close" id="closeFilters" aria-label="Close filters">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h4>Location</h4>
+      <div id="locationFilters" class="filter-options"></div>
+    </div>
+
+    <div class="filter-group">
+      <h4>Experience</h4>
+      <div id="experienceFilters" class="filter-options"></div>
+    </div>
+
+    <div class="filter-group">
+      <h4>Job Type</h4>
+      <div id="typeFilters" class="filter-options"></div>
+    </div>
+
+    <div class="filter-group">
+      <h4>Category</h4>
+      <div id="categoryFilters" class="filter-options"></div>
+    </div>
+  </aside>
+
+  <main class="jobs-main">
+    <div class="jobs-toolbar">
+      <p id="resultsCount">Showing jobs</p>
+
+      <div class="jobs-toolbar-actions">
+        <div class="sort-wrap">
+          <label for="sortSelect">Sort by</label>
+          <select id="sortSelect">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="salary-high">Highest Salary</option>
+            <option value="salary-low">Lowest Salary</option>
+            <option value="az">A-Z</option>
+          </select>
+        </div>
+
+        <button class="btn btn-outline mobile-filter-btn" id="openFilters">
+          <i class="fa-solid fa-sliders"></i> Filters
+        </button>
+      </div>
+    </div>
+
+    <div class="jobs-list" id="jobsList">
+      <div class="skeleton job-list-skeleton"></div>
+      <div class="skeleton job-list-skeleton"></div>
+      <div class="skeleton job-list-skeleton"></div>
+    </div>
+
+    <div class="pagination" id="pagination"></div>
+  </main>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <a href="../index.html" class="logo"><i class="fa-solid fa-briefcase"></i> JobFinder</a>
+      <p>Find the right job. Right now. Thousands of opportunities from top companies.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="../index.html">About Us</a>
+      <a href="jobs.html">Careers</a>
+      <a href="#">Blog</a>
+      <a href="contact.html">Help Center</a>
+    </div>
+    <div>
+      <h4>For Employers</h4>
+      <a href="#">Post a Job</a>
+      <a href="#">Browse Candidates</a>
+      <a href="#">Pricing</a>
+      <a href="#">Resources</a>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <a href="#">FAQ</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div>
+      <h4>Download Our App</h4>
+      <p>Get the app for a better experience on the go.</p>
+      <div class="app-badges">
+        <a href="#" class="app-badge"><i class="fa-brands fa-apple"></i> App Store</a>
+        <a href="#" class="app-badge"><i class="fa-brands fa-google-play"></i> Google Play</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 JobFinder. All rights reserved.</div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="../assets/js/api.js"></script>
+<script src="../assets/js/saved-jobs.js"></script>
+<script src="../assets/js/brands.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/menu.js"></script>
+<script src="../assets/js/back-to-top.js"></script>
+<script src="../assets/js/jobs-filters.js"></script>
+<script src="../assets/js/jobs-sort.js"></script>
+<script src="../assets/js/jobs-pagination.js"></script>
+<script src="../assets/js/jobs-mobile-filters.js"></script>
+<script src="../assets/js/jobs-page.js"></script>
+</body>
+</html>

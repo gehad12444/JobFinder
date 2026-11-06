@@ -1,0 +1,30 @@
+/* ============================================
+   saved-page.css — only loaded by
+   pages/saved.html
+   ============================================ */
+
+.saved-header{ padding-bottom:0; }
+.saved-header .section-head{ margin-bottom:10px; }
+.saved-header h2{ display:flex; align-items:center; }
+.saved-subtitle{ color:var(--ink-faint); font-size:.9rem; }
+
+.saved-jobs-section{ padding-top:24px; }
+
+.saved-jobs-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:20px;
+}
+.saved-jobs-grid .empty-state{
+  grid-column:1 / -1;
+}
+
+/* fade + collapse a card out when it's un-saved */
+.saved-jobs-grid .job-card{
+  transition:opacity .25s ease, transform .25s ease;
+}
+.saved-jobs-grid .job-card.removing{
+  opacity:0;
+  transform:scale(.94);
+  pointer-events:none;
+}

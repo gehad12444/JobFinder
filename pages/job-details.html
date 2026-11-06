@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Details | JobFinder</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/sections.css">
+<link rel="stylesheet" href="../assets/css/job-details-page.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <span><i class="fa-solid fa-fire"></i> 18,000+ Jobs Available</span>
+  <span><i class="fa-solid fa-circle-check"></i> Trusted by 500+ Companies</span>
+</div>
+
+<!-- Navbar (sticky) -->
+<div class="navbar-outer">
+  <header class="navbar">
+    <a href="../index.html" class="logo">
+      <i class="fa-solid fa-briefcase"></i> JobFinder
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html">Home</a>
+      <a href="jobs.html" class="active">Jobs</a>
+      <a href="saved.html">Saved Jobs</a>
+      <a href="profile.html">Profile</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+      <a href="profile.html" class="btn btn-primary">
+        <i class="fa-regular fa-user"></i> Log In / Sign Up
+      </a>
+    </div>
+
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+</div>
+
+<!-- Breadcrumb -->
+<div class="section breadcrumb-section">
+  <nav class="breadcrumb" id="breadcrumb">
+    <a href="../index.html">Home</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <a href="jobs.html">Jobs</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <span id="breadcrumbTitle">Job Details</span>
+  </nav>
+</div>
+
+<!-- Job details content (filled in by job-details.js) -->
+<div class="section job-details-wrap" id="jobDetailsWrap">
+  <div class="skeleton job-details-skeleton"></div>
+</div>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- Login required modal -->
+<div class="modal-overlay" id="loginRequiredOverlay">
+  <div class="modal-card">
+    <div class="modal-icon warn"><i class="fa-solid fa-lock"></i></div>
+    <h3>Please log in to apply</h3>
+    <p>Create a free account or log in first — applications are saved under your email so you can track them later.</p>
+    <a class="btn btn-primary" href="profile.html">Go to Profile</a>
+  </div>
+</div>
+
+<!-- Apply form modal (2 steps) -->
+<div class="modal-overlay" id="applyFormOverlay">
+  <div class="modal-card modal-card-form">
+    <button class="modal-close" id="applyFormClose" aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <h3>Apply for <span id="applyFormJobTitle"></span></h3>
+    <p class="modal-sub">Step <span id="applyStepLabel">1</span> of 2 — this is a demo application, nothing is uploaded or sent anywhere.</p>
+
+    <form id="applyForm" novalidate>
+      <div class="apply-step" id="applyStep1">
+        <label>Full Name
+          <input type="text" id="applyName" placeholder="Your full name" required>
+        </label>
+        <label>Email
+          <input type="email" id="applyEmail" placeholder="you@example.com" required>
+        </label>
+        <label>Phone
+          <input type="tel" id="applyPhone" placeholder="+20 1xx xxx xxxx" required>
+        </label>
+        <p class="form-error hidden" id="applyStep1Error"></p>
+        <button type="button" class="btn btn-primary" id="applyNextBtn">Next</button>
+      </div>
+
+      <div class="apply-step hidden" id="applyStep2">
+        <label>Attach your CV <span class="required-mark">(required, PDF)</span>
+          <input type="file" id="applyCv" accept=".pdf">
+        </label>
+        <label>Cover message <span class="optional">(optional)</span>
+          <textarea id="applyMessage" rows="3" placeholder="Anything you'd like to add..."></textarea>
+        </label>
+        <p class="form-error hidden" id="applyStep2Error"></p>
+        <div class="step-actions">
+          <button type="button" class="btn btn-outline" id="applyBackBtn">Back</button>
+          <button type="submit" class="btn btn-primary">Submit Application</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Apply success modal -->
+<div class="modal-overlay" id="applyModalOverlay">
+  <div class="modal-card">
+    <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <h3>Application Submitted Successfully</h3>
+    <p id="applyModalText">Your application has been recorded.</p>
+    <button class="btn btn-primary" id="applyModalClose">Done</button>
+  </div>
+</div>
+
+<!-- Withdraw confirmation modal -->
+<div class="modal-overlay" id="withdrawOverlay">
+  <div class="modal-card">
+    <div class="modal-icon warn"><i class="fa-solid fa-circle-question"></i></div>
+    <h3>Withdraw your application?</h3>
+    <p id="withdrawText">You already applied to this job. Do you want to withdraw your application?</p>
+    <div class="modal-actions">
+      <button class="btn btn-outline" id="withdrawCancel">Keep Application</button>
+      <button class="btn btn-danger" id="withdrawConfirm">Withdraw</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <a href="../index.html" class="logo"><i class="fa-solid fa-briefcase"></i> JobFinder</a>
+      <p>Find the right job. Right now. Thousands of opportunities from top companies.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="../index.html">About Us</a>
+      <a href="jobs.html">Careers</a>
+      <a href="#">Blog</a>
+      <a href="contact.html">Help Center</a>
+    </div>
+    <div>
+      <h4>For Employers</h4>
+      <a href="#">Post a Job</a>
+      <a href="#">Browse Candidates</a>
+      <a href="#">Pricing</a>
+      <a href="#">Resources</a>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <a href="#">FAQ</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div>
+      <h4>Download Our App</h4>
+      <p>Get the app for a better experience on the go.</p>
+      <div class="app-badges">
+        <a href="#" class="app-badge"><i class="fa-brands fa-apple"></i> App Store</a>
+        <a href="#" class="app-badge"><i class="fa-brands fa-google-play"></i> Google Play</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 JobFinder. All rights reserved.</div>
+</footer>
+
+<script src="../assets/js/api.js"></script>
+<script src="../assets/js/brands.js"></script>
+<script src="../assets/js/saved-jobs.js"></script>
+<script src="../assets/js/user-profile.js"></script>
+<script src="../assets/js/applied-jobs.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/menu.js"></script>
+<script src="../assets/js/back-to-top.js"></script>
+<script src="../assets/js/job-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+/* ============================================
+   job-details-page.css — only loaded by
+   pages/job-details.html
+   ============================================ */
+
+/* ---- Breadcrumb ---- */
+.breadcrumb-section{ padding-top:24px; padding-bottom:0; }
+.breadcrumb{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:.85rem;
+  color:var(--ink-faint);
+}
+.breadcrumb a{ transition:color var(--transition); }
+.breadcrumb a:hover{ color:var(--primary); }
+.breadcrumb i{ font-size:.65rem; }
+.breadcrumb span{ color:var(--ink); font-weight:600; }
+
+/* ---- Job header card ---- */
+.job-details-wrap{ padding-top:20px; }
+
+.job-header-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:26px;
+  margin-bottom:28px;
+}
+.job-header-top{
+  display:flex;
+  align-items:flex-start;
+  gap:18px;
+  margin-bottom:20px;
+}
+.job-header-top .company-icon{ width:56px; height:56px; font-size:1.5rem; border-radius:12px; }
+.job-header-info{ flex:1; min-width:0; }
+.job-header-info h1{ font-size:1.5rem; font-weight:800; margin-bottom:6px; }
+.job-header-company{ font-size:.95rem; font-weight:600; color:var(--ink-soft); display:flex; align-items:center; gap:6px; margin-bottom:10px; }
+.job-header-company .verified{ color:var(--primary); font-size:.8rem; }
+.job-header-top .meta{ display:flex; flex-wrap:wrap; gap:16px; font-size:.85rem; color:var(--ink-faint); }
+.job-header-top .meta span{ display:flex; align-items:center; gap:6px; }
+
+.header-fav-btn{
+  width:44px; height:44px;
+  border-radius:50%;
+  border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--ink-faint);
+  flex-shrink:0;
+  transition:color var(--transition), border-color var(--transition), transform var(--transition);
+}
+.header-fav-btn:hover{ color:#ef4444; border-color:#ef4444; transform:scale(1.06); }
+.header-fav-btn.active{ color:#ef4444; border-color:#ef4444; }
+
+.job-header-bottom{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:16px;
+  padding-top:20px;
+  border-top:1px solid var(--border);
+}
+.job-header-bottom .salary{ font-size:1.2rem; font-weight:800; }
+.job-header-bottom .skills{ display:flex; flex-wrap:wrap; gap:8px; flex:1; }
+.apply-btn{ margin-left:auto; }
+.apply-btn.applied{ background:var(--success); box-shadow:none; }
+.apply-btn.applied:hover{ background:#15803d; }
+
+/* ---- Two-column body ---- */
+.job-details-body{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:28px;
+  align-items:start;
+}
+
+.detail-block{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:24px;
+  margin-bottom:20px;
+}
+.detail-block h2{
+  font-size:1.05rem;
+  display:flex; align-items:center; gap:10px;
+  margin-bottom:14px;
+}
+.detail-block h2 i{ color:var(--primary); font-size:.95rem; }
+.detail-block p{ color:var(--ink-soft); line-height:1.7; font-size:.92rem; }
+
+.detail-list{ display:flex; flex-direction:column; gap:10px; }
+.detail-list li{
+  position:relative;
+  padding-left:22px;
+  color:var(--ink-soft);
+  font-size:.92rem;
+  line-height:1.6;
+}
+.detail-list li::before{
+  content:"";
+  position:absolute;
+  left:0; top:8px;
+  width:8px; height:8px;
+  border-radius:2px;
+  background:var(--primary-light);
+}
+
+/* ---- Sidebar ---- */
+.job-details-side{ display:flex; flex-direction:column; gap:20px; position:sticky; top:88px; }
+.side-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:22px;
+}
+.side-card h3{ font-size:1rem; margin-bottom:16px; }
+
+.overview-list{ display:flex; flex-direction:column; gap:14px; }
+.overview-list li{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:.85rem;
+}
+.overview-list li i{ color:var(--primary); width:16px; text-align:center; }
+.overview-list li span{ color:var(--ink-faint); flex:1; }
+.overview-list li strong{ font-weight:700; }
+
+.about-company{ display:flex; align-items:flex-start; gap:14px; }
+.about-company .company-icon{ width:44px; height:44px; font-size:1.2rem; flex-shrink:0; }
+.about-company p{ font-size:.85rem; color:var(--ink-soft); line-height:1.6; }
+
+.side-card .socials{ display:flex; gap:10px; }
+
+/* ---- Similar jobs ---- */
+.similar-jobs{ margin-top:8px; }
+.similar-jobs-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+/* ---- Skeleton ---- */
+.job-details-skeleton{ height:420px; border-radius:var(--radius-md); }
+
+/* ---- Apply form modal (page-specific parts only; generic .modal-* lives in components.css) ---- */
+.modal-card-form{
+  max-width:440px;
+  max-height:90vh;
+  overflow-y:auto;
+  text-align:left;
+  position:relative;
+  padding:32px 28px;
+}
+.modal-close{
+  position:absolute;
+  top:16px; right:16px;
+  width:32px; height:32px;
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--ink-faint);
+  transition:background var(--transition), color var(--transition);
+}
+.modal-close:hover{ background:var(--primary-soft); color:var(--primary); }
+.modal-card-form h3{ font-size:1.1rem; margin-bottom:6px; padding-right:30px; }
+.modal-sub{ font-size:.82rem; color:var(--ink-faint); margin-bottom:20px; }
+
+#applyForm{ display:flex; flex-direction:column; gap:14px; }
+#applyForm label{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  font-size:.85rem;
+  font-weight:600;
+  color:var(--ink-soft);
+}
+#applyForm .optional{ font-weight:400; color:var(--ink-faint); }
+#applyForm .required-mark{ font-weight:400; color:var(--accent); }
+
+.apply-step{ display:flex; flex-direction:column; gap:14px; }
+.step-actions{ display:flex; gap:10px; margin-top:6px; }
+.step-actions .btn{ flex:1; width:auto; margin-top:0; }
+
+.form-error{
+  background:#fef2f2;
+  color:#dc2626;
+  font-size:.8rem;
+  font-weight:600;
+  padding:8px 12px;
+  border-radius:var(--radius-sm);
+  margin:0;
+}
+#applyForm input,
+#applyForm textarea{
+  font-family:inherit;
+  font-size:.9rem;
+  padding:10px 14px;
+  border-radius:var(--radius-sm);
+  border:1px solid var(--border);
+  background:var(--bg);
+  color:var(--ink);
+  outline:none;
+  transition:border-color var(--transition);
+}
+#applyForm input:focus,
+#applyForm textarea:focus{ border-color:var(--primary); }
+#applyForm textarea{ resize:vertical; font-family:inherit; }
+#applyForm button[type="submit"]{ margin-top:6px; }
