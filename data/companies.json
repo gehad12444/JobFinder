@@ -5,7 +5,6 @@
   { "name": "Meta", "icon": "fa-meta" },
   { "name": "Apple", "icon": "fa-apple" },
   { "name": "Salesforce", "icon": "fa-salesforce" },
-  { "name": "Adobe", "icon": "fa-adobe" },
   { "name": "Intel", "icon": null },
   { "name": "IBM", "icon": null },
   { "name": "Netflix", "icon": null }

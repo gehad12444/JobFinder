@@ -30,8 +30,8 @@
 }
 .carousel-btn:hover{ background:var(--primary); color:#fff; border-color:var(--primary); transform:translateY(-50%) translateY(-2px); }
 .carousel-btn:active{ transform:translateY(-50%) scale(.92); }
-.carousel-btn#featPrev, .carousel-btn#compPrev{ left:-8px; }
-.carousel-btn#featNext, .carousel-btn#compNext{ right:-8px; }
+.carousel-btn#featPrev, .carousel-btn#compPrev{ left:-50px; }
+.carousel-btn#featNext, .carousel-btn#compNext{ right:-50px; }
 
 .featured-viewport{
   width:100%;
