@@ -3,7 +3,7 @@
    and renders the category cards
    ============================================ */
 
-const CATEGORIES_URL = "/data/categories.json";
+const CATEGORIES_URL = "./data/categories.json";
 
 async function loadCategories() {
   const grid = document.getElementById("categoryGrid");

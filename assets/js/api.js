@@ -4,7 +4,7 @@
    of writing its own fetch().
    ============================================ */
 
-const JOBS_URL = "/data/jobs.json";
+const JOBS_URL = "./data/jobs.json";
 
 async function getAllJobs() {
   const res = await fetch(JOBS_URL);
