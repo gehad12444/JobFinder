@@ -20,7 +20,7 @@ async function loadTestimonials() {
   const wrap = document.getElementById("testimonialCards");
 
   try {
-    const res = await fetch("/data/testimonials.json");
+    const res = await fetch("./data/testimonials.json");
     if (!res.ok) throw new Error("Network response was not ok");
     const items = await res.json();
     wrap.innerHTML = items.map(testimonialTemplate).join("");

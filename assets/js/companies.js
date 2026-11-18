@@ -30,7 +30,7 @@ async function loadCompanies() {
   const row = document.getElementById("companiesRow");
 
   try {
-    const res = await fetch("/data/companies.json");
+    const res = await fetch("./data/companies.json");
     if (!res.ok) throw new Error("Network response was not ok");
     const companies = await res.json();
     row.innerHTML = companies.map(companyChipTemplate).join("");
