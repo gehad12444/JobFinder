@@ -97,7 +97,7 @@ async function initJobsPage() {
 
   const [jobs, categories] = await Promise.all([
     getAllJobs(),
-    fetch("./data/categories.json").then((r) => r.json()),
+    fetch("../data/categories.json").then((r) => r.json()),
   ]);
 
   allJobs = params.get("featured") === "true" ? jobs.filter((j) => j.isFeatured) : jobs;
