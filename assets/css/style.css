@@ -34,6 +34,8 @@
 
   --container:1200px;
   --transition:.25s ease;
+
+  --gutter: 24px;
 }
 
 .dark{
@@ -57,7 +59,7 @@ body{
   background:var(--bg);
   color:var(--ink);
   transition:background var(--transition), color var(--transition);
-  overflow-x:hidden;
+  overflow-x:clip;
 }
 
 h1,h2,h3{ font-family:var(--font-display); color:var(--ink); line-height:1.2; }
@@ -70,7 +72,7 @@ input{ font-family:inherit; }
 .section{
   max-width:var(--container);
   margin:0 auto;
-  padding:56px 24px;
+  padding:56px var(--gutter);
 }
 .section-head{
   display:flex;
@@ -150,8 +152,8 @@ input{ font-family:inherit; }
   justify-content:space-between;
   max-width:var(--container);
   margin:0 auto;
-  padding:16px 24px;
-  position:relative;
+  padding: 14px var(--gutter);
+  /* position:relative; */
 }
 .logo{
   font-family:var(--font-display);
@@ -180,6 +182,9 @@ input{ font-family:inherit; }
   background:var(--primary);
   border-radius:2px;
 }
+.nav-links a.nav-login {
+  display: none;
+}
 
 .nav-actions{ display:flex; align-items:center; gap:14px; }
 .menu-toggle{ display:none; }
@@ -190,7 +195,7 @@ input{ font-family:inherit; }
   overflow:hidden;
   max-width:var(--container);
   margin:0 auto;
-  padding:48px 24px 64px;
+  padding: 48px var(--gutter) 64px;
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:48px;
@@ -358,3 +363,20 @@ input{ font-family:inherit; }
 
 .category-card h3{ font-size:.95rem; margin-bottom:4px; font-weight:600; }
 .category-card p{ font-size:.8rem; color:var(--ink-faint); display:flex; align-items:center; justify-content:space-between; }
+.category-grid>*,
+.featured-page>*,
+.saved-jobs-grid>*,
+.similar-jobs-grid>*,
+.testimonial-cards>*,
+.footer-grid>*,
+.contact-grid>*,
+.jobs-layout>* {
+  min-width: 0;
+}
+
+.job-card h3,
+.category-card h3,
+.latest-item .info,
+.profile-list-item .info {
+  overflow-wrap: anywhere;
+}

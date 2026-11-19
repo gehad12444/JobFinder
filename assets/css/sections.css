@@ -202,7 +202,7 @@
 .footer{
   max-width:var(--container);
   margin:0 auto;
-  padding:56px 24px 24px;
+  padding: 56px var(--gutter) 24px;
 }
 .footer-grid{
   display:grid;
